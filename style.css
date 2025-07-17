@@ -1,4 +1,8 @@
 body {
- background: linear-gradient(to right, #96DED1, #696969, #004953);
- font-family: sans-serif;
+  background: linear-gradient(to right, #96DED1, #696969, #004953);
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #333;
 }
