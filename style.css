@@ -1,6 +1,23 @@
 body {
-  background: linear-gradient(to right, #36454F, #003333, #008080);
+  /* We define two background layers, separated by a comma. */
+  /* Layer 1: The color gradient */
+  background-image: linear-gradient(to right, #008080, #36454F, #003333),
+  /* Layer 2: A gradient that is transparent then white */
+                    linear-gradient(to bottom, transparent, white);
+
+  /* We tell the browser where each background layer should be. */
+  /* Layer 1 will cover the top 75% of the page. */
+  background-position: top, bottom;
+  /* Layer 2 will cover the bottom 25% of the page. */
+  background-size: 100% 75%, 100% 25%;
+
+  /* Prevent the backgrounds from repeating. */
+  background-repeat: no-repeat;
+
+  /* Standard styles */
   font-family: sans-serif;
+  margin: 0; /* Removes default browser margin */
+  min-height: 100vh; /* Ensures the body is at least the full height of the viewport */
 }
 
 h1 {
